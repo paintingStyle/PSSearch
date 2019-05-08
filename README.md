@@ -14,7 +14,42 @@
 - 搜索结果优先展示 中文，其次是全拼匹配，最后是拼音首字母匹配
 - 优先显示 高亮位置索引靠前的搜索结果
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+### 使用方法
+
+#### 1, 初始化搜索数据源，指定搜索关键字与标识符
+
+````
+for (SPUser *aUser in category.friendsArray) {
+	NSString *name = aUser.remark:aUser.nickname;
+	NSString *identifer = [NSString stringWithFormat:@"%ld",[category.friendsArray indexOfObject:aUser]];
+	[PSSearchManager addInitializeString:name identifer:identifer];
+}
+````
+
+#### 2, 匹配关键字，刷新结果列表
+
+````
+- (void)searchWithKeyWord:(NSString *)keyword{
+
+	NSMutableArray *resultDataSource = [NSMutableArray array];
+	for (PSSearchEntity *entity in [PSSearchManager getInitializedDataSource]) {
+		@autoreleasepool {
+			PSSearchResult *result = [PSSearchManager searchResultWithKeyWord:keyword searchEntity:entity];;
+			if (!result.highlightedRange.length) { continue; } // 过滤无效的结果
+
+			entity.highlightLoaction = result.highlightedRange.location;
+			entity.textRange = result.highlightedRange;
+			entity.matchType = result.matchType;
+			if ([entity.identifier integerValue] <= self.allSearchFriendsArray.count-1) { // 根据标识符取出业务需要数据
+				SPSelectModel *selectModel = self.category.friendsArray[[entity.identifier integerValue]];
+				selectModel.highlightedRange = result.highlightedRange;
+				[resultDataSource addObject:selectModel];
+			}
+		}
+	}
+	self.hasSearchedArray = resultDataSource;
+}
+````
 
 ## Requirements
 
