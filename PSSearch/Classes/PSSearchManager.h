@@ -29,10 +29,10 @@ NS_ASSUME_NONNULL_BEGIN
 @interface PSSearchManager : NSObject
 
 /** 添加解析的单个数据源,id标识符是为了防止重名 */
-+ (void)addInitializeString:(NSString *)string identifer:(NSString *)identifier;
+- (void)addInitializeString:(NSString *)string identifer:(NSString *)identifier;
 	
 /** 获取已解析的数据源 */
-+ (NSArray *)getInitializedDataSource;
+- (NSArray *)getInitializedDataSource;
 
 /**
  搜索数据
@@ -41,7 +41,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param searchEntity 搜索实例
  @return PSSearchResult
  */
-+ (PSSearchResult *)searchResultWithKeyWord:(NSString *)keyWord
+- (PSSearchResult *)searchResultWithKeyWord:(NSString *)keyWord
 							   searchEntity:(PSSearchEntity *)searchEntity;
 
 /**
@@ -52,7 +52,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param caseSensitive 是否区分大小写
  @return PSSearchResult
  */
-+ (PSSearchResult *)searchResultWithKeyWord:(NSString *)keyWord
+- (PSSearchResult *)searchResultWithKeyWord:(NSString *)keyWord
 							   searchEntity:(PSSearchEntity *)searchEntity
 							  caseSensitive:(BOOL)caseSensitive;
 

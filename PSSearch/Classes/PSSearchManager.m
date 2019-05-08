@@ -22,24 +22,23 @@
 
 @implementation PSSearchManager
 
-+ (void)addInitializeString:(NSString *)string identifer:(NSString *)identifier {
-	PSSearchManager *manager = [PSSearchManager _shareInstance];
-	PSSearchEntity *searchEntity = [PSSearchEntity searchEntityWithIdentifier:identifier andName:string adnHanyuPinyinOutputFormat:manager.outputFormat];
-	[manager.dataSource addObject:searchEntity];
+- (void)addInitializeString:(NSString *)string identifer:(NSString *)identifier {
+	PSSearchEntity *searchEntity = [PSSearchEntity searchEntityWithIdentifier:identifier andName:string adnHanyuPinyinOutputFormat:self.outputFormat];
+	[self.dataSource addObject:searchEntity];
 }
 	
-+ (NSArray *)getInitializedDataSource {
-	return [PSSearchManager _shareInstance].dataSource;
+- (NSArray *)getInitializedDataSource {
+	return self.dataSource;
 }
 
-+ (PSSearchResult *)searchResultWithKeyWord:(NSString *)keyWord
+- (PSSearchResult *)searchResultWithKeyWord:(NSString *)keyWord
 							   searchEntity:(PSSearchEntity *)searchEntity {
 	return [self searchResultWithKeyWord:keyWord
 							searchEntity:searchEntity
 						   caseSensitive:NO];
 }
 
-+ (PSSearchResult *)searchResultWithKeyWord:(NSString *)keyWord
+- (PSSearchResult *)searchResultWithKeyWord:(NSString *)keyWord
 							   searchEntity:(PSSearchEntity *)searchEntity
 							  caseSensitive:(BOOL)caseSensitive {
 	
@@ -71,7 +70,7 @@
 	return nil;
 }
 
-+ (PSSearchResult *)_searchEffectiveResultWithSearchString:(NSString *)searchStrLower
+- (PSSearchResult *)_searchEffectiveResultWithSearchString:(NSString *)searchStrLower
 												nameString:(NSString *)nameStrLower
 										  completeSpelling:(NSString *)completeSpelling
 											 initialString:(NSString *)initialString
@@ -154,17 +153,6 @@
 	searchResult.highlightedRange = NSMakeRange(0, 0);
 	searchResult.matchType = NSIntegerMax;
 	return searchResult;
-}
-
-
-
-+ (PSSearchManager *)_shareInstance {
-	static dispatch_once_t onceToken;
-	static PSSearchManager *_instance;
-	dispatch_once(&onceToken, ^{
-		_instance = [[PSSearchManager alloc] init];
-	});
-	return _instance;
 }
 
 - (HanyuPinyinOutputFormat *)outputFormat {
