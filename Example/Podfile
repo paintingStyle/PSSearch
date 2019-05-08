@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'PSSearch_Example' do
+  pod 'PSSearch', :path => '../'
+
+  target 'PSSearch_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
