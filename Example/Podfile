@@ -3,7 +3,7 @@ use_frameworks!
 platform :ios, '8.0'
 
 target 'PSSearch_Example' do
-  pod 'PSSearch', :path => '../'
+	pod 'PSSearch', :path => '/Users/rsf/Documents/Project/PSSearch/PSSearch.podspec'
 
   target 'PSSearch_Tests' do
     inherit! :search_paths
@@ -11,3 +11,4 @@ target 'PSSearch_Example' do
     
   end
 end
+

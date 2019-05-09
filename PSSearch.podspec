@@ -14,8 +14,9 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'paintingStyle' => 'renshuangfu@spap.com' }
   s.source           = { :git => 'https://github.com/paintingStyle/PSSearch.git', :tag => s.version.to_s }
-
+  
   s.ios.deployment_target = '8.0'
+  s.framework  = "Foundation"
   s.source_files = 'PSSearch/Classes/**/*'
   s.dependency 'PinYin4Objc'
   

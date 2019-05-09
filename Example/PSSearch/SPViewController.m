@@ -7,8 +7,14 @@
 //
 
 #import "SPViewController.h"
+#import "PSSearchManager.h"
+#import "PSSearchEntity.h"
 
 @interface SPViewController ()
+
+@property (weak, nonatomic) IBOutlet UITextField *textField;
+
+@property (nonatomic, strong) PSSearchManager *searchManager;
 
 @end
 
@@ -17,13 +23,47 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	NSArray *keywords = @[
+						  @"a",@"asd",@"llop",@"&",@"mk",@"账上",@"往后",@"数据",@"啊卡卡卡",@"指挥部",@"opp"
+						  ];
+	for (int i=0; i<keywords.count-1; i++) {
+		NSString *s = keywords[i];
+		[self.searchManager addInitializeString:s identifer:[NSString stringWithFormat:@"%d",i]];
+	}
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+- (IBAction)searchDidClick {
+	
+	[self searchWithKeyWord:self.textField.text];
+}
+
+- (void)searchWithKeyWord:(NSString *)keyword{
+	
+	// TODO:2,遍历数据源，查看是否匹配，刷新结果列表
+	NSMutableArray *resultDataSource = [NSMutableArray array];
+	for (PSSearchEntity *entity in [self.searchManager getInitializedDataSource]) {
+		@autoreleasepool {
+			PSSearchResult *result = [self.searchManager searchResultWithKeyWord:keyword searchEntity:entity];;
+			if (!result.highlightedRange.length) { continue; }
+			
+			entity.highlightLoaction = result.highlightedRange.location;
+			entity.textRange = result.highlightedRange;
+			entity.matchType = result.matchType;
+			[resultDataSource addObject:entity];
+			NSLog(@"----->: %@",entity.name);
+		}
+	}
+	
+}
+
+#pragma mark - setter/getter
+
+- (PSSearchManager *)searchManager {
+	if (!_searchManager) {
+		_searchManager = [[PSSearchManager alloc] init];
+	}
+	return _searchManager;
 }
 
 @end

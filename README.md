@@ -22,10 +22,20 @@
 @property (nonatomic, strong) PSSearchManager *searchManager;
 
 for (SPUser *aUser in category.friendsArray) {
-NSString *name = aUser.remark:aUser.nickname;
-NSString *identifer = [NSString stringWithFormat:@"%ld",[category.friendsArray indexOfObject:aUser]];
-[self.searchManager addInitializeString:name identifer:identifer];
+	NSString *name = aUser.remark:aUser.nickname;
+	NSString *identifer = [NSString stringWithFormat:@"%ld",[category.friendsArray indexOfObject:aUser]];
+	[self.searchManager addInitializeString:name identifer:identifer];
 }
+
+#pragma mark - setter/getter
+
+- (PSSearchManager *)searchManager {
+	if (!_searchManager) {
+		_searchManager = [[PSSearchManager alloc] init];
+	}
+	return _searchManager;
+}
+
 ````
 
 #### 2, 匹配关键字，刷新结果列表
@@ -35,20 +45,20 @@ NSString *identifer = [NSString stringWithFormat:@"%ld",[category.friendsArray i
 
 NSMutableArray *resultDataSource = [NSMutableArray array];
 for (PSSearchEntity *entity in [self.searchManager getInitializedDataSource]) {
-@autoreleasepool {
-	PSSearchResult *result = [self.searchManager searchResultWithKeyWord:keyword searchEntity:entity];;
-	if (!result.highlightedRange.length) { continue; } // 过滤无效的结果
+		@autoreleasepool {
+			PSSearchResult *result = [self.searchManager searchResultWithKeyWord:keyword searchEntity:entity];;
+			if (!result.highlightedRange.length) { continue; } // 过滤无效的结果
 
-	entity.highlightLoaction = result.highlightedRange.location;
-	entity.textRange = result.highlightedRange;
-	entity.matchType = result.matchType;
-	if ([entity.identifier integerValue] <= self.allSearchFriendsArray.count-1) { // 根据标识符取出业务需要数据
-		SPSelectModel *selectModel = self.category.friendsArray[[entity.identifier integerValue]];
-		selectModel.highlightedRange = result.highlightedRange;
-		[resultDataSource addObject:selectModel];
+			entity.highlightLoaction = result.highlightedRange.location;
+			entity.textRange = result.highlightedRange;
+			entity.matchType = result.matchType;
+			if ([entity.identifier integerValue] <= self.allSearchFriendsArray.count-1) { // 根据标识符取出业务需要数据
+				SPSelectModel *selectModel = self.category.friendsArray[[entity.identifier integerValue]];
+				selectModel.highlightedRange = result.highlightedRange;
+				[resultDataSource addObject:selectModel];
+			}
+		}
 	}
-}
-}
 self.hasSearchedArray = resultDataSource;
 }
 ````
