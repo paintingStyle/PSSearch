@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 /** 唯一标识符 */
 @property (nonatomic, copy) NSString *identifier;
+/** 搜索索引 */
+@property (nonatomic, assign) NSInteger index;
 /** 人物名称，如：张飞 */
 @property (nonatomic, copy) NSString *name;
 /** 拼音全拼（小写）如：@"zhangfei" */

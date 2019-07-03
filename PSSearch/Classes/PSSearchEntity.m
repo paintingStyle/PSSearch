@@ -119,13 +119,13 @@
 	
 	searchEntity.name = name;
 	searchEntity.identifier = identifier;
-	searchEntity.completeSpelling = completeSpelling;
-	searchEntity.initialString = initialString;
+	searchEntity.completeSpelling = [completeSpelling lowercaseString]; // 以小写为基准搜索
+	searchEntity.initialString = [initialString lowercaseString];
 	searchEntity.pinyinLocationString = [completeSpellingArray componentsJoinedByString:@","];
 	searchEntity.initialLocationString = [pinyinFirstLetterLocationArray componentsJoinedByString:@","];
 	if (searchEntity.isContainPolyPhone) {
-		searchEntity.polyPhoneCompleteSpelling = polyPhoneCompleteSpelling;
-		searchEntity.polyPhoneInitialString = polyPhoneInitialString;
+		searchEntity.polyPhoneCompleteSpelling = [polyPhoneCompleteSpelling lowercaseString];
+		searchEntity.polyPhoneInitialString = [polyPhoneInitialString lowercaseString];
 		searchEntity.polyPhonePinyinLocationString = [polyPhoneCompleteSpellingArray componentsJoinedByString:@","];
 	}
 	

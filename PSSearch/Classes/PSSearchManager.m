@@ -23,10 +23,24 @@
 @implementation PSSearchManager
 
 - (void)addInitializeString:(NSString *)string identifer:(NSString *)identifier {
+	[self addInitializeString:string identifer:identifier index:0];
+}
+
+- (void)addInitializeString:(NSString *)string identifer:(NSString *)identifier index:(NSInteger)index {
+	
+	if ([self existingWithIdentifer:identifier]) { return; }
+	
 	PSSearchEntity *searchEntity = [PSSearchEntity searchEntityWithIdentifier:identifier andName:string adnHanyuPinyinOutputFormat:self.outputFormat];
+	searchEntity.index = index;
 	[self.dataSource addObject:searchEntity];
 }
-	
+
+- (BOOL)existingWithIdentifer:(NSString *)identifer {
+	NSPredicate *predicate =[NSPredicate predicateWithFormat:@"(self.identifier in %@)", identifer];
+	NSArray *array = [self.dataSource filteredArrayUsingPredicate:predicate];
+	return array.count;
+}
+
 - (NSArray *)getInitializedDataSource {
 	return self.dataSource;
 }
