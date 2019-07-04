@@ -28,7 +28,7 @@
 
 - (void)addInitializeString:(NSString *)string identifer:(NSString *)identifier index:(NSInteger)index {
 	
-	if ([self existingWithIdentifer:identifier]) { return; }
+	if ([self existingWithIdentifer:identifier]) { return; } // 过滤重复的identifier
 	
 	PSSearchEntity *searchEntity = [PSSearchEntity searchEntityWithIdentifier:identifier andName:string adnHanyuPinyinOutputFormat:self.outputFormat];
 	searchEntity.index = index;
@@ -36,6 +36,7 @@
 }
 
 - (BOOL)existingWithIdentifer:(NSString *)identifer {
+
 	NSPredicate *predicate =[NSPredicate predicateWithFormat:@"(self.identifier in %@)", identifer];
 	NSArray *array = [self.dataSource filteredArrayUsingPredicate:predicate];
 	return array.count;
