@@ -51,7 +51,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (instancetype)searchEntityWithIdentifier:(NSString *)identifier
 								   andName:(NSString *)name
-				adnHanyuPinyinOutputFormat:(HanyuPinyinOutputFormat *)pinyinFormat;
+				adnHanyuPinyinOutputFormat:(HanyuPinyinOutputFormat *)pinyinFormat
+							 caseSensitive:(BOOL)caseSensitive;
 	
 @end
 

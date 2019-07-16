@@ -10,8 +10,11 @@
 @implementation PSSearchEntity
 
 + (instancetype)searchEntityWithIdentifier:(NSString *)identifier
-								   andName:(NSString *)name
-				adnHanyuPinyinOutputFormat:(HanyuPinyinOutputFormat *)pinyinFormat {
+								  andName:(NSString *)name
+				adnHanyuPinyinOutputFormat:(HanyuPinyinOutputFormat *)pinyinFormat
+							 caseSensitive:(BOOL)caseSensitive {
+	
+	NSString *nameKey = (caseSensitive ? name:[name lowercaseString]); // 默认不区分大小写，以小写为基准搜索
 	
 	PSSearchEntity *searchEntity = [[PSSearchEntity alloc] init];
 	
@@ -28,9 +31,9 @@
 	// 拼音首字母的位置数组
 	NSMutableArray *pinyinFirstLetterLocationArray = [[NSMutableArray alloc] init];
 	
-	for (NSInteger i = 0; i < name.length; i++) {
+	for (NSInteger i = 0; i < nameKey.length; i++) {
 		NSRange range = NSMakeRange(i, 1);
-		NSString *hanyuChar = [name substringWithRange:range];
+		NSString *hanyuChar = [nameKey substringWithRange:range];
 		NSString *mainPinyinStrOfChar;
 		NSString *polyPhonePinyinStrOfChar;
 		BOOL isPolyPhoneChar = NO;
@@ -40,7 +43,7 @@
 		 *  pinyinFormat : 拼音的格式化器
 		 *  @"" :  seperator 分隔符
 		 */
-		NSArray *pinyinStrArrayOfChar = [PinyinHelper getFormattedHanyuPinyinStringArrayWithChar:[name characterAtIndex:i] withHanyuPinyinOutputFormat:pinyinFormat];
+		NSArray *pinyinStrArrayOfChar = [PinyinHelper getFormattedHanyuPinyinStringArrayWithChar:[nameKey characterAtIndex:i] withHanyuPinyinOutputFormat:pinyinFormat];
 		// 获取每个字符所对应的拼音数组，如果包含多音字，则匹配
 		if ((nil != pinyinStrArrayOfChar) && ((int) [pinyinStrArrayOfChar count] > 0)) {
 			mainPinyinStrOfChar = [pinyinStrArrayOfChar objectAtIndex:0];
@@ -106,11 +109,11 @@
 		} else {
 			// 如果包含多音字，需要对多音字进行额外处理
 			if (searchEntity.isContainPolyPhone) {
-				[polyPhoneCompleteSpelling appendFormat:@"%C",[name characterAtIndex:i]];
+				[polyPhoneCompleteSpelling appendFormat:@"%C",[nameKey characterAtIndex:i]];
 				[polyPhoneCompleteSpellingArray addObject:@(i)];
 				polyPhoneInitialString = [polyPhoneInitialString stringByAppendingString:hanyuChar];
 			}
-			[completeSpelling appendFormat:@"%C",[name characterAtIndex:i]];
+			[completeSpelling appendFormat:@"%C",[nameKey characterAtIndex:i]];
 			[completeSpellingArray addObject:@(i)];
 			[pinyinFirstLetterLocationArray addObject:@(i)];
 			initialString = [initialString stringByAppendingString:hanyuChar];
@@ -119,13 +122,25 @@
 	
 	searchEntity.name = name;
 	searchEntity.identifier = identifier;
-	searchEntity.completeSpelling = [completeSpelling lowercaseString]; // 以小写为基准搜索
-	searchEntity.initialString = [initialString lowercaseString];
+
+	if (caseSensitive) {
+		searchEntity.completeSpelling = completeSpelling;
+		searchEntity.initialString = initialString;
+	}else {
+		searchEntity.completeSpelling = [completeSpelling lowercaseString];
+		searchEntity.initialString = [initialString lowercaseString];
+	}
+	
 	searchEntity.pinyinLocationString = [completeSpellingArray componentsJoinedByString:@","];
 	searchEntity.initialLocationString = [pinyinFirstLetterLocationArray componentsJoinedByString:@","];
 	if (searchEntity.isContainPolyPhone) {
-		searchEntity.polyPhoneCompleteSpelling = [polyPhoneCompleteSpelling lowercaseString];
-		searchEntity.polyPhoneInitialString = [polyPhoneInitialString lowercaseString];
+		if (caseSensitive) {
+			searchEntity.polyPhoneCompleteSpelling = polyPhoneCompleteSpelling;
+			searchEntity.polyPhoneInitialString = polyPhoneInitialString;
+		}else {
+			searchEntity.polyPhoneCompleteSpelling = [polyPhoneCompleteSpelling lowercaseString];
+			searchEntity.polyPhoneInitialString = [polyPhoneInitialString lowercaseString];
+		}
 		searchEntity.polyPhonePinyinLocationString = [polyPhoneCompleteSpellingArray componentsJoinedByString:@","];
 	}
 	

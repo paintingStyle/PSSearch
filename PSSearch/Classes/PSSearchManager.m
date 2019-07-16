@@ -30,7 +30,7 @@
 	
 	if ([self existingWithIdentifer:identifier]) { return; } // 过滤重复的identifier
 	
-	PSSearchEntity *searchEntity = [PSSearchEntity searchEntityWithIdentifier:identifier andName:string adnHanyuPinyinOutputFormat:self.outputFormat];
+	PSSearchEntity *searchEntity = [PSSearchEntity searchEntityWithIdentifier:identifier andName:string adnHanyuPinyinOutputFormat:self.outputFormat caseSensitive:self.caseSensitive];
 	searchEntity.index = index;
 	[self.dataSource addObject:searchEntity];
 }
@@ -48,14 +48,6 @@
 
 - (PSSearchResult *)searchResultWithKeyWord:(NSString *)keyWord
 							   searchEntity:(PSSearchEntity *)searchEntity {
-	return [self searchResultWithKeyWord:keyWord
-							searchEntity:searchEntity
-						   caseSensitive:NO];
-}
-
-- (PSSearchResult *)searchResultWithKeyWord:(NSString *)keyWord
-							   searchEntity:(PSSearchEntity *)searchEntity
-							  caseSensitive:(BOOL)caseSensitive {
 	
 	PSSearchResult *resultModel = [self
 								   _searchEffectiveResultWithSearchString:keyWord
@@ -64,7 +56,7 @@
 								   initialString:searchEntity.initialString
 								   pinyinLocationString:searchEntity.pinyinLocationString
 								   initialLocationString:searchEntity.initialLocationString
-								   caseSensitive:caseSensitive];
+								   caseSensitive:self.caseSensitive];
 	
 	if (resultModel.highlightedRange.length) {
 		return resultModel;
@@ -77,7 +69,7 @@
 					   initialString:searchEntity.polyPhoneInitialString
 					   pinyinLocationString:searchEntity.polyPhonePinyinLocationString
 					   initialLocationString:searchEntity.initialLocationString
-					   caseSensitive:caseSensitive];
+					   caseSensitive:self.caseSensitive];
 		if (resultModel.highlightedRange.length) {
 			return resultModel;
 		}
@@ -95,17 +87,15 @@
 	
 	PSSearchResult *searchResult = [[PSSearchResult alloc] init];
 	
-	NSString *searchKey = searchStrLower;
 	// 若搜索单个和多个字母不区分大小写,这里统一转成小写
-	if (!caseSensitive && [PSSearchTools isEnglishCharactersWithString:searchStrLower]) {
-		searchKey = [searchStrLower lowercaseString];
-	}
+	NSString *searchKey = caseSensitive ? searchStrLower:[searchStrLower lowercaseString];
+	NSString *nameKey = caseSensitive ? nameStrLower:[nameStrLower lowercaseString];
 	
 	NSArray *completeSpellingArray = [pinyinLocationString componentsSeparatedByString:@","];
 	NSArray *pinyinFirstLetterLocationArray = [initialLocationString componentsSeparatedByString:@","];
 	
 	// 完全中文匹配范围
-	NSRange chineseRange = [nameStrLower rangeOfString:searchKey];
+	NSRange chineseRange = [nameKey rangeOfString:searchKey];
 	// 拼音全拼匹配范围
 	NSRange complateRange = [completeSpelling rangeOfString:searchKey];
 	// 拼音首字母匹配范围

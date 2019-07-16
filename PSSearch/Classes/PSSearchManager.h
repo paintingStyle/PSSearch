@@ -28,6 +28,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface PSSearchManager : NSObject
 
+/// 是否区分大小写
+@property (nonatomic, assign) BOOL caseSensitive;
+
 /** 添加解析的单个数据源,id标识符是为了防止重名 */
 - (void)addInitializeString:(NSString *)string identifer:(NSString *)identifier;
 - (void)addInitializeString:(NSString *)string identifer:(NSString *)identifier index:(NSInteger)index;
@@ -44,18 +47,6 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (PSSearchResult *)searchResultWithKeyWord:(NSString *)keyWord
 							   searchEntity:(PSSearchEntity *)searchEntity;
-
-/**
- 搜索数据(是否区分大小写)
-
- @param keyWord 关键字
- @param searchEntity 搜索实例
- @param caseSensitive 是否区分大小写
- @return PSSearchResult
- */
-- (PSSearchResult *)searchResultWithKeyWord:(NSString *)keyWord
-							   searchEntity:(PSSearchEntity *)searchEntity
-							  caseSensitive:(BOOL)caseSensitive;
 
 @end
 
