@@ -38,6 +38,9 @@ NS_ASSUME_NONNULL_BEGIN
 /** 获取已解析的数据源 */
 - (NSArray *)getInitializedDataSource;
 
+/** 追加需要处理读音与本身读音不同的特殊字符键值对，@{@"pinyin":@"vaule"} */
+- (void)appendingFixPinYinMappings:(NSDictionary *)mappings;
+
 /**
  搜索数据
  

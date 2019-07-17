@@ -17,10 +17,21 @@
 	
 @property (nonatomic, strong) HanyuPinyinOutputFormat *outputFormat;
 @property (nonatomic, strong) NSMutableArray *dataSource;
+@property (nonatomic, strong) NSMutableDictionary *fixPinYinMappings;
 	
 @end
 
 @implementation PSSearchManager
+
+- (instancetype)init {
+	if (self = [super init]) {
+		_caseSensitive = YES;
+		_fixPinYinMappings =  [NSMutableDictionary dictionaryWithDictionary:@{
+																			  @"en":@"嗯", // 嗯这个字用的是后鼻音用ng, ng很不常用，又有很多人不知道所以采取了en的形式
+																			  }];
+	}
+	return self;
+}
 
 - (void)addInitializeString:(NSString *)string identifer:(NSString *)identifier {
 	[self addInitializeString:string identifer:identifier index:0];
@@ -44,6 +55,15 @@
 
 - (NSArray *)getInitializedDataSource {
 	return self.dataSource;
+}
+
+- (void)appendingFixPinYinMappings:(NSDictionary *)mappings {
+	
+	[mappings enumerateKeysAndObjectsUsingBlock:^(NSString *key, NSString *vaule, BOOL * _Nonnull stop) {
+		if ([key isKindOfClass:[NSString class]] && [vaule isKindOfClass:[NSString class]]) {
+			[self.fixPinYinMappings setObject:vaule forKey:key];
+		}
+	}];
 }
 
 - (PSSearchResult *)searchResultWithKeyWord:(NSString *)keyWord
@@ -154,6 +174,21 @@
 			return searchResult;
 		}
 	}
+	
+	// 处理读音与本身读音不同的特殊字符
+	__block NSRange fixPinYinRange = NSMakeRange(NSNotFound, 0);
+	[self.fixPinYinMappings enumerateKeysAndObjectsUsingBlock:^(NSString *key, NSString *vaule, BOOL * _Nonnull stop) {
+		if ([searchKey isEqualToString:key] && [nameKey rangeOfString:vaule].length) {
+			fixPinYinRange = [nameKey rangeOfString:vaule];
+			*stop = YES;
+		}
+	}];
+	if (fixPinYinRange.length!=0) {
+		searchResult.highlightedRange = fixPinYinRange;
+		searchResult.matchType = MatchTypeInitial;
+		return searchResult;
+	}
+	
 	
 	searchResult.highlightedRange = NSMakeRange(0, 0);
 	searchResult.matchType = NSIntegerMax;

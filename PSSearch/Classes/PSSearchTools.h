@@ -16,6 +16,13 @@ NS_ASSUME_NONNULL_BEGIN
 + (BOOL)isChinese:(NSString *)string;
 /** 判断传入的字符串是否包含英文 */
 + (BOOL)includeChinese:(NSString *)string;
+
+/** 转换为拼音 */
++ (NSString *)transform2Pinyin:(NSString *)str;
+
++ (BOOL)isChineseFirst:(NSString *)str;
++ (BOOL)isEnglishFirst:(NSString *)str;
+
 /** 获取传入字符串的第一个拼音字母 */
 + (NSString *)firstCharactor:(NSString *)aString withFormat:(HanyuPinyinOutputFormat *)pinyinFormat;
 	

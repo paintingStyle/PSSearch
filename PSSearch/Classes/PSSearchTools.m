@@ -25,6 +25,59 @@
 	}
 	return NO;
 }
+
+
++ (NSString *)transform2Pinyin:(NSString *)str {
+	
+	if (!str || !str.length) {
+		return nil;
+	}
+	
+	if (![self isChineseFirst:str] && ![self isEnglishFirst:str]) {
+		return str;
+	}
+	
+	NSMutableString *english = [str mutableCopy];
+	// 先转换为带声调的拼音
+	CFStringTransform((__bridge CFMutableStringRef)english, NULL, kCFStringTransformMandarinLatin, NO);
+	// 去掉重音和变音符号
+	CFStringTransform((__bridge CFMutableStringRef)english, NULL, kCFStringTransformStripCombiningMarks, NO);
+	//去除两端空格和回车 中间空格不用去，用以区分不同汉字
+	[english stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+	
+	// 统一使用小写
+	return [english lowercaseString];
+}
+
++ (BOOL)isChineseFirst:(NSString *)str {
+	if (!self || !str.length) {
+		return NO;
+	}
+	
+	int utfCode = 0;
+	void *buffer = &utfCode;
+	NSRange range = NSMakeRange(0, 1);
+	BOOL b = [str getBytes:buffer maxLength:2 usedLength:NULL encoding:NSUTF16LittleEndianStringEncoding options:NSStringEncodingConversionExternalRepresentation range:range remainingRange:NULL];
+	if (b && (utfCode >= 0x4e00 && utfCode <= 0x9fa5)){
+		return YES;
+	}else{
+		return NO;
+	}
+}
+
++ (BOOL)isEnglishFirst:(NSString *)str {
+	
+	if (!self || !str.length) {
+		return NO;
+	}
+	
+	NSString *firstString = [str substringToIndex:1];
+	NSString *regular = @"^[A-Za-z]+$";
+	NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regular];
+	
+	return [predicate evaluateWithObject:firstString];
+}
+
 	
 + (NSString *)firstCharactor:(NSString *)aString withFormat:(HanyuPinyinOutputFormat *)pinyinFormat {
 	NSString *pinYin = [PinyinHelper toHanyuPinyinStringWithNSString:aString withHanyuPinyinOutputFormat:pinyinFormat withNSString:@""];

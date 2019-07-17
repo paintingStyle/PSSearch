@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'PSSearch'
-  s.version          = '1.0.7'
+  s.version          = '1.0.8'
   s.summary          = '联系人呢称/拼音/字母搜索组件'
   s.homepage         = 'https://github.com/paintingStyle/PSSearch'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
