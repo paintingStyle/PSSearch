@@ -25,8 +25,9 @@
 
 - (instancetype)init {
 	if (self = [super init]) {
-		_caseSensitive = YES;
+		_caseSensitive = NO;
 		_fixPinYinMappings =  [NSMutableDictionary dictionaryWithDictionary:@{
+																			  @"e":@"嗯",
 																			  @"en":@"嗯", // 嗯这个字用的是后鼻音用ng, ng很不常用，又有很多人不知道所以采取了en的形式
 																			  }];
 	}
