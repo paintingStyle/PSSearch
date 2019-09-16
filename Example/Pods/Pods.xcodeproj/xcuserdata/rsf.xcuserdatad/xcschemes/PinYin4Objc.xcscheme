@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1020"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4DA0B353B70027CA6BAFDAC8E427A4D5"
+               BlueprintIdentifier = "DE8CD32C80E698549F2E8BBD5F0FAB45"
                BuildableName = "PinYin4Objc.framework"
                BlueprintName = "PinYin4Objc"
                ReferencedContainer = "container:Pods.xcodeproj">

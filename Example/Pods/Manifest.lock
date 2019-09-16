@@ -1,10 +1,10 @@
 PODS:
   - PinYin4Objc (1.1.1)
-  - PSSearch (1.0.7):
+  - PSSearch (1.0.9):
     - PinYin4Objc
 
 DEPENDENCIES:
-  - PSSearch (from `/Users/rsf/Documents/Project/PSSearch/PSSearch.podspec`)
+  - PSSearch (from `../`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -12,12 +12,12 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   PSSearch:
-    :path: "/Users/rsf/Documents/Project/PSSearch/PSSearch.podspec"
+    :path: "../"
 
 SPEC CHECKSUMS:
   PinYin4Objc: 3fa9673610368330e2dfb688b1d19a35c3930a78
-  PSSearch: 0eea275e8c87d9d0e387201f9a8f0a760a382dcf
+  PSSearch: 65b34bcdca73a1b0afef053def05cf940566d433
 
-PODFILE CHECKSUM: b55d8628057618bc03306b66b6e4696981805847
+PODFILE CHECKSUM: 6901e920ed02f3f0999e2d5a5d4412640d689df5
 
-COCOAPODS: 1.6.2
+COCOAPODS: 1.7.5

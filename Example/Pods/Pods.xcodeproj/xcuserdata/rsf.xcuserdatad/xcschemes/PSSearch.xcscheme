@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1020"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "62719454015B58E263B2D20503FE56E2"
+               BlueprintIdentifier = "F43C516E255E8B6F516E989ADBFAB4B4"
                BuildableName = "PSSearch.framework"
                BlueprintName = "PSSearch"
                ReferencedContainer = "container:Pods.xcodeproj">

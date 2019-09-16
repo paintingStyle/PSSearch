@@ -49,7 +49,7 @@
 
 - (BOOL)existingWithIdentifer:(NSString *)identifer {
 
-	NSPredicate *predicate =[NSPredicate predicateWithFormat:@"(self.identifier in %@)", identifer];
+	NSPredicate *predicate =[NSPredicate predicateWithFormat:@"identifier == %@", identifer];
 	NSArray *array = [self.dataSource filteredArrayUsingPredicate:predicate];
 	return array.count;
 }

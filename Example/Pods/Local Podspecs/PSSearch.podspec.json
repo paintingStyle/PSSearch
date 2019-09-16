@@ -1,6 +1,6 @@
 {
   "name": "PSSearch",
-  "version": "1.0.7",
+  "version": "1.0.9",
   "summary": "联系人呢称/拼音/字母搜索组件",
   "homepage": "https://github.com/paintingStyle/PSSearch",
   "license": {
@@ -12,7 +12,7 @@
   },
   "source": {
     "git": "https://github.com/paintingStyle/PSSearch.git",
-    "tag": "1.0.7"
+    "tag": "1.0.9"
   },
   "platforms": {
     "ios": "8.0"
