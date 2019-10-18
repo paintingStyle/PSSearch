@@ -1,14 +1,17 @@
-use_frameworks!
+#use_frameworks!
 
-platform :ios, '8.0'
+platform :ios, '9.0'
 
 target 'PSSearch_Example' do
-	pod 'PSSearch', :path => '../'
 
+	pod 'PSSearch', :path => '../'
+	pod 'PinYin4Objc', :git => 'https://github.com/paintingStyle/PinYin4Objc.git'
+	
   target 'PSSearch_Tests' do
     inherit! :search_paths
 
     
   end
 end
+
 

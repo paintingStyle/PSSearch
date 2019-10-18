@@ -15,7 +15,6 @@
 							 caseSensitive:(BOOL)caseSensitive {
 	
 	NSString *nameKey = (caseSensitive ? name:[name lowercaseString]); // 默认不区分大小写，以小写为基准搜索
-	
 	PSSearchEntity *searchEntity = [[PSSearchEntity alloc] init];
 	
 	// 拼音全拼

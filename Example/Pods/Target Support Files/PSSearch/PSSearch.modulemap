@@ -1,6 +1,0 @@
-framework module PSSearch {
-  umbrella header "PSSearch-umbrella.h"
-
-  export *
-  module * { export * }
-}

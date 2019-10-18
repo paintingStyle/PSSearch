@@ -12,8 +12,8 @@
 
 @interface SPViewController ()
 
+@property (weak, nonatomic) IBOutlet UILabel *textLabel;
 @property (weak, nonatomic) IBOutlet UITextField *textField;
-
 @property (nonatomic, strong) PSSearchManager *searchManager;
 
 @end
@@ -23,13 +23,33 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+	
 	NSArray *keywords = @[
-						  @"按实际的了解 嗯(182981928)",@"",@"a",@"asd",@"llop",@"&",@"mk",@"账上",@"往后",@"数据",@"啊卡卡卡",@"指挥部",@"opp"
+						  @"啊卡卡卡",
+						  @"按实(182981928)",
+						  @">?[=2",
+						  @"a",
+						  @"asd",
+						  @"llop",
+						  @"&",
+						  @"mk",
+						  @"账上",
+						  @"往后",
+						  @"数据",
+						  @"指挥部",
+						  @"opp"
 						  ];
 	for (int i=0; i<keywords.count-1; i++) {
 		NSString *s = keywords[i];
 		[self.searchManager addInitializeString:s identifer:[NSString stringWithFormat:@"%d",i]];
 	}
+
+	NSMutableString *string = [NSMutableString stringWithString:@"{\n"];
+	[keywords enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+		[string appendFormat:@"\t%@,\n", obj];
+	}];
+	[string appendString:@"}\n"];
+	self.textLabel.text = string;
 }
 
 
@@ -51,7 +71,7 @@
 			entity.textRange = result.highlightedRange;
 			entity.matchType = result.matchType;
 			[resultDataSource addObject:entity];
-			NSLog(@"----->: %@",entity.name);
+			NSLog(@"----->name: %@, textRange:%@",entity.name, NSStringFromRange(entity.textRange));
 		}
 	}
 	

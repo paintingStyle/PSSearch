@@ -19,6 +19,6 @@ Pod::Spec.new do |s|
   s.framework  = "Foundation"
   s.source_files = 'PSSearch/Classes/**/*'
   s.dependency 'PinYin4Objc'
-  
+	
 end
 

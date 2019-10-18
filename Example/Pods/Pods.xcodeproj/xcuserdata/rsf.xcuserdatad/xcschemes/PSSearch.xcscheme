@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F43C516E255E8B6F516E989ADBFAB4B4"
-               BuildableName = "PSSearch.framework"
+               BuildableName = "libPSSearch.a"
                BlueprintName = "PSSearch"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
