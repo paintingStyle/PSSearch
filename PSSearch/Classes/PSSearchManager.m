@@ -47,7 +47,7 @@
     [self.dataSource addObject:searchEntity];
 }
 
-- (void)removeFormIdentifer:(NSString *)identifier {
+- (void)removeObjectAtIdentifier:(NSString *)identifier {
     
     NSPredicate *pre = [NSPredicate predicateWithFormat:@"identifier = %@",identifier];
     NSArray *filteredArray = [self.dataSource filteredArrayUsingPredicate:pre];

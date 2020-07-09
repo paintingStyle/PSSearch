@@ -28,7 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface PSSearchManager : NSObject
 
-/// 是否区分大小写
+/// 是否区分大小写, Defalut:NO
 @property (nonatomic, assign) BOOL caseSensitive;
 
 /** 添加解析的单个数据源,id标识符是为了防止重名 */
@@ -36,7 +36,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)addInitializeString:(NSString *)string identifer:(NSString *)identifier index:(NSInteger)index;
 
 /** 如果搜索数据源发生改变，需要移除旧的数据源 */
-- (void)removeFormIdentifer:(NSString *)identifier;
+- (void)removeObjectAtIdentifier:(NSString *)identifier;
 - (void)removeAllObjects;
 
 /** 获取已解析的数据源 */

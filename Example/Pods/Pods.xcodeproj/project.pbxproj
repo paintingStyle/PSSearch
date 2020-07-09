@@ -7,28 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2E9A755FDD3638559F41998E9F04DB59 /* PSSearch-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 965B93B9E8395DF96C56F751ACED4D0D /* PSSearch-dummy.m */; };
-		493ADC041342EC72E14B8CBF1343844C /* ChineseToPinyinResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F6E1186F5A2197831B91A185261CC6 /* ChineseToPinyinResource.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		4A21EFDA45A82FF13105EBFC47E18B41 /* PSSearchTools.h in Headers */ = {isa = PBXBuildFile; fileRef = D90352C51A31DE3E079CDDC0AA4F4405 /* PSSearchTools.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		51723D0420FFC22FF1A259D97C284A1A /* ChineseToPinyinResource.h in Headers */ = {isa = PBXBuildFile; fileRef = BF4F6C8F5858FAD0FEBFFEAC1E031782 /* ChineseToPinyinResource.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2E9A755FDD3638559F41998E9F04DB59 /* PSSearch-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFE6532E023FC297F6501D193B6F909 /* PSSearch-dummy.m */; };
+		493ADC041342EC72E14B8CBF1343844C /* ChineseToPinyinResource.m in Sources */ = {isa = PBXBuildFile; fileRef = F35AF3082DA262193D8A2FFA45DF105C /* ChineseToPinyinResource.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4A21EFDA45A82FF13105EBFC47E18B41 /* PSSearchTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BC803FDC87401760C2C713A125DECF7 /* PSSearchTools.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		51723D0420FFC22FF1A259D97C284A1A /* ChineseToPinyinResource.h in Headers */ = {isa = PBXBuildFile; fileRef = 492654D5269C958DEA81FBAB57485A82 /* ChineseToPinyinResource.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		56E395D7F73C01A98E680134D62AF747 /* Pods-PSSearch_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B5916583FC5D0DC473311C87DCF364 /* Pods-PSSearch_Example-dummy.m */; };
-		666DE66B3DB0B5E3E0C7E7664B0790A0 /* PinYin4Objc-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 68083EFD4654DE974488CBFF7E468EF6 /* PinYin4Objc-dummy.m */; };
-		6C91501D809172FF98F186D957876088 /* PSSearchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 259309E7D4FB2B6C74CC8268DC5CF720 /* PSSearchManager.m */; };
-		74B96A555504504EEB547EB0231744A4 /* PSSearchEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E33E62ED882C5FF0B19E5E8E2EEE58 /* PSSearchEntity.m */; };
-		76F0F8E55219866947DE4256C6E9456E /* PSSearchTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A23DDCB7F1C87CAE82E1B36FD2E5A3 /* PSSearchTools.m */; };
-		9A3E8293F0E52E34A0C1B5EA27C9931B /* PinyinFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 16755DD31AA2B7FC2BEBA3931C73F4AB /* PinyinFormatter.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		9CECA429AFDCA80F37DF4C1243027E5F /* HanyuPinyinOutputFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = CF581798DB49EC17A38AB4D1626F51AF /* HanyuPinyinOutputFormat.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		9F93B4A1713607C0DF156B701B071968 /* PinyinFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EC343F6DACB81C58FE0C42FBCA4CBD /* PinyinFormatter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		666DE66B3DB0B5E3E0C7E7664B0790A0 /* PinYin4Objc-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD7B6A65AFA6316B2B683CB39AAB270 /* PinYin4Objc-dummy.m */; };
+		6C91501D809172FF98F186D957876088 /* PSSearchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 08DBE5ECB6AAFA165B5945044D803AA7 /* PSSearchManager.m */; };
+		74B96A555504504EEB547EB0231744A4 /* PSSearchEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BD310363D276C73185AD124F80F9B08 /* PSSearchEntity.m */; };
+		76F0F8E55219866947DE4256C6E9456E /* PSSearchTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E7DCCEBCE665C64D6B4EEB049953599 /* PSSearchTools.m */; };
+		9A3E8293F0E52E34A0C1B5EA27C9931B /* PinyinFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 280DD194496F729627DD40DE02DA8210 /* PinyinFormatter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9CECA429AFDCA80F37DF4C1243027E5F /* HanyuPinyinOutputFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D54A78318D5E2FF6895203D2A87D86D /* HanyuPinyinOutputFormat.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9F93B4A1713607C0DF156B701B071968 /* PinyinFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = DC6B066C890AE5C9C2779EFDABB9077C /* PinyinFormatter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		A1082F0F94FA4F940639E6CC9B7F89FB /* Pods-PSSearch_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A59D004543B72EBD09E57844A949A565 /* Pods-PSSearch_Tests-dummy.m */; };
-		A1216B01A4F07884A854E6BA755F9062 /* PinyinHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = F2761925497B3EAFD5A70749D633E4BC /* PinyinHelper.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B0E4F8FB8A0A9028E2E0347B6139A0D7 /* PSSearchEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = 5604C2DAB1BDC9F142156968619D25C8 /* PSSearchEntity.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B1E7E141B1C649F0826A2C9CF229317F /* NSString+PinYin4Cocoa.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5DFD66737B4D6D3BA71E2CE61DCFC8 /* NSString+PinYin4Cocoa.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		BCE15EB21CD0445357B3C0379602D471 /* PSSearchManager.h in Headers */ = {isa = PBXBuildFile; fileRef = DC91EBB22F3E1ECBABB58F5A3B65FC54 /* PSSearchManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		C540A5210DA09AACF104AD7475463A8E /* NSString+PinYin4Cocoa.m in Sources */ = {isa = PBXBuildFile; fileRef = B85DD05501F188A2D9ADE1715C178884 /* NSString+PinYin4Cocoa.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		D7C73B6728D94AC10550A9BA4B7A251F /* PinyinHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E8005B5593F6ACEEF08F13DBA59575F0 /* PinyinHelper.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		D94D2D16CE622D356372CE028C78CB66 /* HanyuPinyinOutputFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8222681E3482B6646CFDD560A2270 /* HanyuPinyinOutputFormat.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		E21F4ED7A4A4148A774FE331ECAA9597 /* PinYin4Objc.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B0DE644C217ACA908932E2EF0EBBBF5 /* PinYin4Objc.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		F070B507AC417CCA2140E62A5C07B872 /* unicode_to_hanyu_pinyin.txt in Resources */ = {isa = PBXBuildFile; fileRef = 53F6FD7E35132D8C686A9E8AAE13EA7A /* unicode_to_hanyu_pinyin.txt */; };
+		A1216B01A4F07884A854E6BA755F9062 /* PinyinHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E80116A16A9304109540590394A39E7 /* PinyinHelper.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B0E4F8FB8A0A9028E2E0347B6139A0D7 /* PSSearchEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = A703F9C6DDA08F5D3F4109EC0CCAA6EF /* PSSearchEntity.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B1E7E141B1C649F0826A2C9CF229317F /* NSString+PinYin4Cocoa.h in Headers */ = {isa = PBXBuildFile; fileRef = 10717DEE35765A27B1CCDFF2C198FE64 /* NSString+PinYin4Cocoa.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BCE15EB21CD0445357B3C0379602D471 /* PSSearchManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F3F0803FD88EA350EFB278557592725E /* PSSearchManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C540A5210DA09AACF104AD7475463A8E /* NSString+PinYin4Cocoa.m in Sources */ = {isa = PBXBuildFile; fileRef = D7FDBFD3A46B44B0BB3A2EF8AC14C747 /* NSString+PinYin4Cocoa.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D7C73B6728D94AC10550A9BA4B7A251F /* PinyinHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D366FA44F7C78CCB45A57A51B634197D /* PinyinHelper.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D94D2D16CE622D356372CE028C78CB66 /* HanyuPinyinOutputFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 895CD0A3C131369584A9807AD95C7EA0 /* HanyuPinyinOutputFormat.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E21F4ED7A4A4148A774FE331ECAA9597 /* PinYin4Objc.h in Headers */ = {isa = PBXBuildFile; fileRef = AE4AFDE9FCCF91431330DBE37BBA0466 /* PinYin4Objc.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F070B507AC417CCA2140E62A5C07B872 /* unicode_to_hanyu_pinyin.txt in Resources */ = {isa = PBXBuildFile; fileRef = CC26CF95752E4A29A298C2FB74E8CD80 /* unicode_to_hanyu_pinyin.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,52 +71,49 @@
 
 /* Begin PBXFileReference section */
 		0117D327D00FC79C022E97F3A7E2DE13 /* PinYin4Objc.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = PinYin4Objc.bundle; path = "PinYin4Objc-PinYin4Objc.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
-		02EC343F6DACB81C58FE0C42FBCA4CBD /* PinyinFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PinyinFormatter.m; path = PinYin4Objc/Classes/PinyinFormatter.m; sourceTree = "<group>"; };
-		0A52BC98459F79591DEAF65718B58D1A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		1406D8CAB2008E1BE198E697C82013BF /* ResourceBundle-PinYin4Objc-PinYin4Objc-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-PinYin4Objc-PinYin4Objc-Info.plist"; sourceTree = "<group>"; };
-		16755DD31AA2B7FC2BEBA3931C73F4AB /* PinyinFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PinyinFormatter.h; path = PinYin4Objc/Classes/PinyinFormatter.h; sourceTree = "<group>"; };
-		1F646DC9F472414DB1CA892A34DED1BC /* PinYin4Objc.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = PinYin4Objc.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		259309E7D4FB2B6C74CC8268DC5CF720 /* PSSearchManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PSSearchManager.m; path = PSSearch/Classes/PSSearchManager.m; sourceTree = "<group>"; };
+		04150D76F040FD8C743803BE47929990 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		08DBE5ECB6AAFA165B5945044D803AA7 /* PSSearchManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PSSearchManager.m; path = PSSearch/Classes/PSSearchManager.m; sourceTree = "<group>"; };
+		10717DEE35765A27B1CCDFF2C198FE64 /* NSString+PinYin4Cocoa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+PinYin4Cocoa.h"; path = "PinYin4Objc/Classes/NSString+PinYin4Cocoa.h"; sourceTree = "<group>"; };
+		1AEE245D21EA10EE559BC05035EE653D /* ResourceBundle-PinYin4Objc-PinYin4Objc-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-PinYin4Objc-PinYin4Objc-Info.plist"; sourceTree = "<group>"; };
+		1DD7B6A65AFA6316B2B683CB39AAB270 /* PinYin4Objc-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PinYin4Objc-dummy.m"; sourceTree = "<group>"; };
+		1E7DCCEBCE665C64D6B4EEB049953599 /* PSSearchTools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PSSearchTools.m; path = PSSearch/Classes/PSSearchTools.m; sourceTree = "<group>"; };
+		280DD194496F729627DD40DE02DA8210 /* PinyinFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PinyinFormatter.h; path = PinYin4Objc/Classes/PinyinFormatter.h; sourceTree = "<group>"; };
 		29B5916583FC5D0DC473311C87DCF364 /* Pods-PSSearch_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PSSearch_Example-dummy.m"; sourceTree = "<group>"; };
-		2CF8222681E3482B6646CFDD560A2270 /* HanyuPinyinOutputFormat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HanyuPinyinOutputFormat.m; path = PinYin4Objc/Classes/HanyuPinyinOutputFormat.m; sourceTree = "<group>"; };
-		394AF3660C34F05A23A445C53CD180BA /* PSSearch-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PSSearch-prefix.pch"; sourceTree = "<group>"; };
-		40F6E1186F5A2197831B91A185261CC6 /* ChineseToPinyinResource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ChineseToPinyinResource.m; path = PinYin4Objc/Classes/ChineseToPinyinResource.m; sourceTree = "<group>"; };
+		3353866797D4902D40C31B0E5A19E922 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		3E80116A16A9304109540590394A39E7 /* PinyinHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PinyinHelper.h; path = PinYin4Objc/Classes/PinyinHelper.h; sourceTree = "<group>"; };
 		4352409BFE148E141DCEE17619E877A9 /* libPSSearch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libPSSearch.a; path = libPSSearch.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		45330897EF508B6029A0858706B50D06 /* Pods-PSSearch_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PSSearch_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		492654D5269C958DEA81FBAB57485A82 /* ChineseToPinyinResource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChineseToPinyinResource.h; path = PinYin4Objc/Classes/ChineseToPinyinResource.h; sourceTree = "<group>"; };
 		53B77AFAA5AE29EF1D800BEF7037614D /* Pods-PSSearch_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PSSearch_Example-resources.sh"; sourceTree = "<group>"; };
-		53F6FD7E35132D8C686A9E8AAE13EA7A /* unicode_to_hanyu_pinyin.txt */ = {isa = PBXFileReference; includeInIndex = 1; name = unicode_to_hanyu_pinyin.txt; path = PinYin4Objc/Resources/unicode_to_hanyu_pinyin.txt; sourceTree = "<group>"; };
 		5450271FD3E2AD024E7A8A381F59D93D /* Pods-PSSearch_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PSSearch_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		5604C2DAB1BDC9F142156968619D25C8 /* PSSearchEntity.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PSSearchEntity.h; path = PSSearch/Classes/PSSearchEntity.h; sourceTree = "<group>"; };
-		61DD7EA76DBF4ED2CF88A875930F49B4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		68083EFD4654DE974488CBFF7E468EF6 /* PinYin4Objc-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PinYin4Objc-dummy.m"; sourceTree = "<group>"; };
-		6B0DE644C217ACA908932E2EF0EBBBF5 /* PinYin4Objc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PinYin4Objc.h; path = PinYin4Objc/Classes/PinYin4Objc.h; sourceTree = "<group>"; };
-		88E33E62ED882C5FF0B19E5E8E2EEE58 /* PSSearchEntity.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PSSearchEntity.m; path = PSSearch/Classes/PSSearchEntity.m; sourceTree = "<group>"; };
-		9270C0B430AE5AB72FD76C2F4A898BFB /* PinYin4Objc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PinYin4Objc.xcconfig; sourceTree = "<group>"; };
-		95A23DDCB7F1C87CAE82E1B36FD2E5A3 /* PSSearchTools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PSSearchTools.m; path = PSSearch/Classes/PSSearchTools.m; sourceTree = "<group>"; };
-		965B93B9E8395DF96C56F751ACED4D0D /* PSSearch-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PSSearch-dummy.m"; sourceTree = "<group>"; };
-		96E3C802AC3CCE893BC7EB15742FA23C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		59302722175EE848F5CA443156BDB6D2 /* PSSearch-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PSSearch-prefix.pch"; sourceTree = "<group>"; };
+		64FFEBDC66D641985378207CC8F79ABC /* PinYin4Objc-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PinYin4Objc-prefix.pch"; sourceTree = "<group>"; };
+		6D54A78318D5E2FF6895203D2A87D86D /* HanyuPinyinOutputFormat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HanyuPinyinOutputFormat.h; path = PinYin4Objc/Classes/HanyuPinyinOutputFormat.h; sourceTree = "<group>"; };
+		7BC803FDC87401760C2C713A125DECF7 /* PSSearchTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PSSearchTools.h; path = PSSearch/Classes/PSSearchTools.h; sourceTree = "<group>"; };
+		7BD310363D276C73185AD124F80F9B08 /* PSSearchEntity.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PSSearchEntity.m; path = PSSearch/Classes/PSSearchEntity.m; sourceTree = "<group>"; };
+		895CD0A3C131369584A9807AD95C7EA0 /* HanyuPinyinOutputFormat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HanyuPinyinOutputFormat.m; path = PinYin4Objc/Classes/HanyuPinyinOutputFormat.m; sourceTree = "<group>"; };
+		91F00613A66459D926648FCDA93AC706 /* PSSearch.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PSSearch.xcconfig; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A59D004543B72EBD09E57844A949A565 /* Pods-PSSearch_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PSSearch_Tests-dummy.m"; sourceTree = "<group>"; };
+		A703F9C6DDA08F5D3F4109EC0CCAA6EF /* PSSearchEntity.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PSSearchEntity.h; path = PSSearch/Classes/PSSearchEntity.h; sourceTree = "<group>"; };
 		AAE3B5CE964A84757B6A1DDEDAB09DF8 /* libPods-PSSearch_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-PSSearch_Example.a"; path = "libPods-PSSearch_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD5DFD66737B4D6D3BA71E2CE61DCFC8 /* NSString+PinYin4Cocoa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+PinYin4Cocoa.h"; path = "PinYin4Objc/Classes/NSString+PinYin4Cocoa.h"; sourceTree = "<group>"; };
+		AE4AFDE9FCCF91431330DBE37BBA0466 /* PinYin4Objc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PinYin4Objc.h; path = PinYin4Objc/Classes/PinYin4Objc.h; sourceTree = "<group>"; };
 		AF760A29DEBE15940D8B653C884C5697 /* Pods-PSSearch_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PSSearch_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		B098B7907581C1CB33782B1BEDCC1361 /* PinYin4Objc-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PinYin4Objc-prefix.pch"; sourceTree = "<group>"; };
-		B1EDD76D7912D2E9C0B77A0449D63579 /* PSSearch.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = PSSearch.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B75C06EF77C1FFA81FF35C7091FC6219 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		B85DD05501F188A2D9ADE1715C178884 /* NSString+PinYin4Cocoa.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+PinYin4Cocoa.m"; path = "PinYin4Objc/Classes/NSString+PinYin4Cocoa.m"; sourceTree = "<group>"; };
 		B92024340381C1FD2191109A5614A681 /* Pods-PSSearch_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PSSearch_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		BF4F6C8F5858FAD0FEBFFEAC1E031782 /* ChineseToPinyinResource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChineseToPinyinResource.h; path = PinYin4Objc/Classes/ChineseToPinyinResource.h; sourceTree = "<group>"; };
 		C026B4CA6E1F330E1E9D20B867B4825A /* libPods-PSSearch_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-PSSearch_Tests.a"; path = "libPods-PSSearch_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C8532457ABDFA410B89DA3541A50A0DA /* PSSearch.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PSSearch.xcconfig; sourceTree = "<group>"; };
-		CF581798DB49EC17A38AB4D1626F51AF /* HanyuPinyinOutputFormat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HanyuPinyinOutputFormat.h; path = PinYin4Objc/Classes/HanyuPinyinOutputFormat.h; sourceTree = "<group>"; };
+		CC26CF95752E4A29A298C2FB74E8CD80 /* unicode_to_hanyu_pinyin.txt */ = {isa = PBXFileReference; includeInIndex = 1; name = unicode_to_hanyu_pinyin.txt; path = PinYin4Objc/Resources/unicode_to_hanyu_pinyin.txt; sourceTree = "<group>"; };
+		D18D86EBF4FA4B4823963D2CEC2A582D /* PinYin4Objc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PinYin4Objc.xcconfig; sourceTree = "<group>"; };
 		D25BDFE36CEEF0C83AA511802FD0DA51 /* Pods-PSSearch_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PSSearch_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		D90352C51A31DE3E079CDDC0AA4F4405 /* PSSearchTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PSSearchTools.h; path = PSSearch/Classes/PSSearchTools.h; sourceTree = "<group>"; };
-		DC91EBB22F3E1ECBABB58F5A3B65FC54 /* PSSearchManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PSSearchManager.h; path = PSSearch/Classes/PSSearchManager.h; sourceTree = "<group>"; };
-		E8005B5593F6ACEEF08F13DBA59575F0 /* PinyinHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PinyinHelper.m; path = PinYin4Objc/Classes/PinyinHelper.m; sourceTree = "<group>"; };
+		D366FA44F7C78CCB45A57A51B634197D /* PinyinHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PinyinHelper.m; path = PinYin4Objc/Classes/PinyinHelper.m; sourceTree = "<group>"; };
+		D7FDBFD3A46B44B0BB3A2EF8AC14C747 /* NSString+PinYin4Cocoa.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+PinYin4Cocoa.m"; path = "PinYin4Objc/Classes/NSString+PinYin4Cocoa.m"; sourceTree = "<group>"; };
+		D91FE4734A1688F3B243D73EC95C883C /* PSSearch.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = PSSearch.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		DC6B066C890AE5C9C2779EFDABB9077C /* PinyinFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PinyinFormatter.m; path = PinYin4Objc/Classes/PinyinFormatter.m; sourceTree = "<group>"; };
 		E86316549FFC2BE9980BDD235A10FD80 /* libPinYin4Objc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libPinYin4Objc.a; path = libPinYin4Objc.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1FD3893D17F9EF9A3E644C1D887CA69 /* Pods-PSSearch_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PSSearch_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		F2761925497B3EAFD5A70749D633E4BC /* PinyinHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PinyinHelper.h; path = PinYin4Objc/Classes/PinyinHelper.h; sourceTree = "<group>"; };
 		F30E94B861359A556BC5ED26B74B01CF /* Pods-PSSearch_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PSSearch_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		F35AF3082DA262193D8A2FFA45DF105C /* ChineseToPinyinResource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ChineseToPinyinResource.m; path = PinYin4Objc/Classes/ChineseToPinyinResource.m; sourceTree = "<group>"; };
+		F3F0803FD88EA350EFB278557592725E /* PSSearchManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PSSearchManager.h; path = PSSearch/Classes/PSSearchManager.h; sourceTree = "<group>"; };
+		FAFE6532E023FC297F6501D193B6F909 /* PSSearch-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PSSearch-dummy.m"; sourceTree = "<group>"; };
 		FEEE7FE1229F7999438B9133039FB56A /* Pods-PSSearch_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PSSearch_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -159,6 +156,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1259480045D5044A609D836BE596C994 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				91F00613A66459D926648FCDA93AC706 /* PSSearch.xcconfig */,
+				FAFE6532E023FC297F6501D193B6F909 /* PSSearch-dummy.m */,
+				59302722175EE848F5CA443156BDB6D2 /* PSSearch-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/PSSearch";
+			sourceTree = "<group>";
+		};
+		1A1E391A66497D0C22331E4B0E81359B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7A4B06463F2B133E282A34661E2C949E /* PinYin4Objc */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		23D39870BD9B8BBFD19D21BC80A7E1B4 /* Pods-PSSearch_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,72 +201,48 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		314FB8DC3B4CA769105CFCF987A275AE /* Pod */ = {
+		3177C4BBF9E7F6BE18C805F1EC1336D3 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B75C06EF77C1FFA81FF35C7091FC6219 /* LICENSE */,
-				1F646DC9F472414DB1CA892A34DED1BC /* PinYin4Objc.podspec */,
-				61DD7EA76DBF4ED2CF88A875930F49B4 /* README.md */,
+				D18D86EBF4FA4B4823963D2CEC2A582D /* PinYin4Objc.xcconfig */,
+				1DD7B6A65AFA6316B2B683CB39AAB270 /* PinYin4Objc-dummy.m */,
+				64FFEBDC66D641985378207CC8F79ABC /* PinYin4Objc-prefix.pch */,
+				1AEE245D21EA10EE559BC05035EE653D /* ResourceBundle-PinYin4Objc-PinYin4Objc-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PinYin4Objc";
+			sourceTree = "<group>";
+		};
+		410ECEC82AF0CE3A30D1EFBDF4E00E98 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				04150D76F040FD8C743803BE47929990 /* LICENSE */,
+				D91FE4734A1688F3B243D73EC95C883C /* PSSearch.podspec */,
+				3353866797D4902D40C31B0E5A19E922 /* README.md */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		37C0DF1B99B4CB40759D405F9BB2F8D5 /* Development Pods */ = {
+		7A4B06463F2B133E282A34661E2C949E /* PinYin4Objc */ = {
 			isa = PBXGroup;
 			children = (
-				7792101E28C3518AA74856C1C0FD1DAA /* PinYin4Objc */,
-				69DB07E282EA0349716ACA5062CE22CC /* PSSearch */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		6721C61E5D8305CBC6BE359BAAFB0179 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				0A52BC98459F79591DEAF65718B58D1A /* LICENSE */,
-				B1EDD76D7912D2E9C0B77A0449D63579 /* PSSearch.podspec */,
-				96E3C802AC3CCE893BC7EB15742FA23C /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		69DB07E282EA0349716ACA5062CE22CC /* PSSearch */ = {
-			isa = PBXGroup;
-			children = (
-				5604C2DAB1BDC9F142156968619D25C8 /* PSSearchEntity.h */,
-				88E33E62ED882C5FF0B19E5E8E2EEE58 /* PSSearchEntity.m */,
-				DC91EBB22F3E1ECBABB58F5A3B65FC54 /* PSSearchManager.h */,
-				259309E7D4FB2B6C74CC8268DC5CF720 /* PSSearchManager.m */,
-				D90352C51A31DE3E079CDDC0AA4F4405 /* PSSearchTools.h */,
-				95A23DDCB7F1C87CAE82E1B36FD2E5A3 /* PSSearchTools.m */,
-				6721C61E5D8305CBC6BE359BAAFB0179 /* Pod */,
-				EFEE74F9236492B48FC2C3F3D68A8231 /* Support Files */,
-			);
-			name = PSSearch;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		7792101E28C3518AA74856C1C0FD1DAA /* PinYin4Objc */ = {
-			isa = PBXGroup;
-			children = (
-				BF4F6C8F5858FAD0FEBFFEAC1E031782 /* ChineseToPinyinResource.h */,
-				40F6E1186F5A2197831B91A185261CC6 /* ChineseToPinyinResource.m */,
-				CF581798DB49EC17A38AB4D1626F51AF /* HanyuPinyinOutputFormat.h */,
-				2CF8222681E3482B6646CFDD560A2270 /* HanyuPinyinOutputFormat.m */,
-				AD5DFD66737B4D6D3BA71E2CE61DCFC8 /* NSString+PinYin4Cocoa.h */,
-				B85DD05501F188A2D9ADE1715C178884 /* NSString+PinYin4Cocoa.m */,
-				6B0DE644C217ACA908932E2EF0EBBBF5 /* PinYin4Objc.h */,
-				16755DD31AA2B7FC2BEBA3931C73F4AB /* PinyinFormatter.h */,
-				02EC343F6DACB81C58FE0C42FBCA4CBD /* PinyinFormatter.m */,
-				F2761925497B3EAFD5A70749D633E4BC /* PinyinHelper.h */,
-				E8005B5593F6ACEEF08F13DBA59575F0 /* PinyinHelper.m */,
-				314FB8DC3B4CA769105CFCF987A275AE /* Pod */,
-				7E95044D86C06189A9B1934148EB509B /* Resources */,
-				9795623629B20BFB67303CD2A62B2010 /* Support Files */,
+				492654D5269C958DEA81FBAB57485A82 /* ChineseToPinyinResource.h */,
+				F35AF3082DA262193D8A2FFA45DF105C /* ChineseToPinyinResource.m */,
+				6D54A78318D5E2FF6895203D2A87D86D /* HanyuPinyinOutputFormat.h */,
+				895CD0A3C131369584A9807AD95C7EA0 /* HanyuPinyinOutputFormat.m */,
+				10717DEE35765A27B1CCDFF2C198FE64 /* NSString+PinYin4Cocoa.h */,
+				D7FDBFD3A46B44B0BB3A2EF8AC14C747 /* NSString+PinYin4Cocoa.m */,
+				AE4AFDE9FCCF91431330DBE37BBA0466 /* PinYin4Objc.h */,
+				280DD194496F729627DD40DE02DA8210 /* PinyinFormatter.h */,
+				DC6B066C890AE5C9C2779EFDABB9077C /* PinyinFormatter.m */,
+				3E80116A16A9304109540590394A39E7 /* PinyinHelper.h */,
+				D366FA44F7C78CCB45A57A51B634197D /* PinyinHelper.m */,
+				D8036B71067261A9BBB18DEAF37EEDC1 /* Resources */,
+				3177C4BBF9E7F6BE18C805F1EC1336D3 /* Support Files */,
 			);
 			name = PinYin4Objc;
-			path = /Users/rsf/Documents/Project/Pod/PinYin4Objc;
-			sourceTree = "<absolute>";
+			path = PinYin4Objc;
+			sourceTree = "<group>";
 		};
 		7AF402D27E9784CAC0E87F8BFD9B0811 /* Targets Support Files */ = {
 			isa = PBXGroup;
@@ -261,35 +253,40 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		7E95044D86C06189A9B1934148EB509B /* Resources */ = {
+		B5AF3EF18F95D5EB6570908A74CD2568 /* PSSearch */ = {
 			isa = PBXGroup;
 			children = (
-				53F6FD7E35132D8C686A9E8AAE13EA7A /* unicode_to_hanyu_pinyin.txt */,
+				A703F9C6DDA08F5D3F4109EC0CCAA6EF /* PSSearchEntity.h */,
+				7BD310363D276C73185AD124F80F9B08 /* PSSearchEntity.m */,
+				F3F0803FD88EA350EFB278557592725E /* PSSearchManager.h */,
+				08DBE5ECB6AAFA165B5945044D803AA7 /* PSSearchManager.m */,
+				7BC803FDC87401760C2C713A125DECF7 /* PSSearchTools.h */,
+				1E7DCCEBCE665C64D6B4EEB049953599 /* PSSearchTools.m */,
+				410ECEC82AF0CE3A30D1EFBDF4E00E98 /* Pod */,
+				1259480045D5044A609D836BE596C994 /* Support Files */,
 			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		9795623629B20BFB67303CD2A62B2010 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				9270C0B430AE5AB72FD76C2F4A898BFB /* PinYin4Objc.xcconfig */,
-				68083EFD4654DE974488CBFF7E468EF6 /* PinYin4Objc-dummy.m */,
-				B098B7907581C1CB33782B1BEDCC1361 /* PinYin4Objc-prefix.pch */,
-				1406D8CAB2008E1BE198E697C82013BF /* ResourceBundle-PinYin4Objc-PinYin4Objc-Info.plist */,
-			);
-			name = "Support Files";
-			path = "../PSSearch/Example/Pods/Target Support Files/PinYin4Objc";
+			name = PSSearch;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				37C0DF1B99B4CB40759D405F9BB2F8D5 /* Development Pods */,
+				F49DE7C866CF247C065BC632F38F8306 /* Development Pods */,
 				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				1A1E391A66497D0C22331E4B0E81359B /* Pods */,
 				3033F4D83296AC3A2098D466765BC048 /* Products */,
 				7AF402D27E9784CAC0E87F8BFD9B0811 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		D8036B71067261A9BBB18DEAF37EEDC1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CC26CF95752E4A29A298C2FB74E8CD80 /* unicode_to_hanyu_pinyin.txt */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
@@ -299,15 +296,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		EFEE74F9236492B48FC2C3F3D68A8231 /* Support Files */ = {
+		F49DE7C866CF247C065BC632F38F8306 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C8532457ABDFA410B89DA3541A50A0DA /* PSSearch.xcconfig */,
-				965B93B9E8395DF96C56F751ACED4D0D /* PSSearch-dummy.m */,
-				394AF3660C34F05A23A445C53CD180BA /* PSSearch-prefix.pch */,
+				B5AF3EF18F95D5EB6570908A74CD2568 /* PSSearch */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/PSSearch";
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		FC0A4741D4FB260183C95F8664087F78 /* Pods-PSSearch_Tests */ = {
@@ -583,7 +577,7 @@
 /* Begin XCBuildConfiguration section */
 		0861A115423FBC16102B8CDA3CA17594 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C8532457ABDFA410B89DA3541A50A0DA /* PSSearch.xcconfig */;
+			baseConfigurationReference = 91F00613A66459D926648FCDA93AC706 /* PSSearch.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -606,7 +600,7 @@
 		};
 		1283DF094C4638967AB79D04293080D6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C8532457ABDFA410B89DA3541A50A0DA /* PSSearch.xcconfig */;
+			baseConfigurationReference = 91F00613A66459D926648FCDA93AC706 /* PSSearch.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -674,7 +668,7 @@
 		};
 		7C16296871EA0013494FA7FE25747994 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9270C0B430AE5AB72FD76C2F4A898BFB /* PinYin4Objc.xcconfig */;
+			baseConfigurationReference = D18D86EBF4FA4B4823963D2CEC2A582D /* PinYin4Objc.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/PinYin4Objc";
@@ -835,7 +829,7 @@
 		};
 		AF1ACD68CB9E0E959F15B0E1C373E1EB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9270C0B430AE5AB72FD76C2F4A898BFB /* PinYin4Objc.xcconfig */;
+			baseConfigurationReference = D18D86EBF4FA4B4823963D2CEC2A582D /* PinYin4Objc.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -859,7 +853,7 @@
 		};
 		B3A19E5F7F02B04C29D6BF5F25BECB56 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9270C0B430AE5AB72FD76C2F4A898BFB /* PinYin4Objc.xcconfig */;
+			baseConfigurationReference = D18D86EBF4FA4B4823963D2CEC2A582D /* PinYin4Objc.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/PinYin4Objc";
@@ -875,7 +869,7 @@
 		};
 		B54125442C321E03EA73DB2F1EF4D7FE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9270C0B430AE5AB72FD76C2F4A898BFB /* PinYin4Objc.xcconfig */;
+			baseConfigurationReference = D18D86EBF4FA4B4823963D2CEC2A582D /* PinYin4Objc.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

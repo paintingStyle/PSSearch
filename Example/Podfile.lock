@@ -1,22 +1,27 @@
 PODS:
-  - PinYin4Objc (1.1.5)
-  - PSSearch (1.1.0):
+  - PinYin4Objc (1.1.6)
+  - PSSearch (1.1.1):
     - PinYin4Objc
 
 DEPENDENCIES:
-  - PinYin4Objc (from `/Users/rsf/Documents/Project/Pod/PinYin4Objc/PinYin4Objc.podspec`)
+  - PinYin4Objc (from `https://github.com/paintingStyle/PinYin4Objc.git`)
   - PSSearch (from `../`)
 
 EXTERNAL SOURCES:
   PinYin4Objc:
-    :path: "/Users/rsf/Documents/Project/Pod/PinYin4Objc/PinYin4Objc.podspec"
+    :git: https://github.com/paintingStyle/PinYin4Objc.git
   PSSearch:
     :path: "../"
 
-SPEC CHECKSUMS:
-  PinYin4Objc: 08eb3230061bf5d78326c1deeccf9a6e1d4d47bf
-  PSSearch: a2d4c119ebf6fff6fedff8c5ea2dd4d1664e55e8
+CHECKOUT OPTIONS:
+  PinYin4Objc:
+    :commit: 05ac869c7ba67210bf4dd4778f6190fc58271fc2
+    :git: https://github.com/paintingStyle/PinYin4Objc.git
 
-PODFILE CHECKSUM: cae40809e8a0632f9c6d2e8ea91ac1886acba517
+SPEC CHECKSUMS:
+  PinYin4Objc: 4191b95f2dab8e3eef8da39abce2cb77768dc742
+  PSSearch: 2292d564ec2705e72ef36c937914a8cc0b833c6d
+
+PODFILE CHECKSUM: 198880c09f9cdcac5d3dd31c731888e08034e643
 
 COCOAPODS: 1.7.5
